@@ -1,0 +1,5 @@
+{
+    "departmentName":"CSE",
+    "departmentAddress":"5th cross, Second Street",
+    "departmentCode": "CSE-15006"
+}

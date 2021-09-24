@@ -1,0 +1,6 @@
+{
+    "firstName": "Fahima",
+    "lastName": "Rahman",
+    "email": "Fahima@gmail.com",
+    "departmentId": 2
+}
