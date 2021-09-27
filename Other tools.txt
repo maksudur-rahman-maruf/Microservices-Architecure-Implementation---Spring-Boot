@@ -1,0 +1,6 @@
+Distributed Tracing Application 
+- Zipkin / Sleuth [lets you track the progress of subsequent microservices by adding trace and span id on the HTTP Request Header]
+
+Application Monitoring Solution
+- Prometheus / Micrometer
+- Graphana
