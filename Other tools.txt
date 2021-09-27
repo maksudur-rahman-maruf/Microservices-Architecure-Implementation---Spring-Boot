@@ -3,4 +3,4 @@ Distributed Tracing Application
 
 Application Monitoring Solution
 - Prometheus / Micrometer [actuator is used inside, we used actuator too for monitoring application]
-- Graphana
+- Graphana [Monitoring solution for datasource/database, It provides charts, graphs or alerts for the web when connected to suppurted datasources], [Here Prometheus is the datasources for graphana]
