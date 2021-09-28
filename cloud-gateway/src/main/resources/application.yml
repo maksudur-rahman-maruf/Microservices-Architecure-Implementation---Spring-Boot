@@ -25,3 +25,26 @@ spring:
               args:
                 name: DEPARTMENT-SERVICE
                 fallbackuri: forward:/departmentServiceFallBack
+                
+                
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+
+resilience4j.circuitbreaker:
+  instances:
+    USER-SERVICE:
+      registerHealthIndicator: true
+      ringBufferSizeInClosedState: 10
+      ringBufferSizeInHalfOpenState: 5
+      waitDurationInOpenState: 10s
+      failureRateThreshold: 60
