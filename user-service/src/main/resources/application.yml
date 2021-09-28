@@ -37,3 +37,9 @@ resilience4j.circuitbreaker:
 #        waitDurationInOpenState: 5s
 #        slidingWindowType: COUNT_BASED
 
+resilience4j.ratelimiter:
+  instances:
+    userService:
+      limitForPeriod: 10
+      limitRefreshPeriod: 100000
+      timeoutDuration: 1000ms
