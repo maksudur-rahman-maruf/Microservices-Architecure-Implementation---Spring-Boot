@@ -50,8 +50,8 @@ resilience4j.retry:
       maxRetryAttempts: 5
       waitDuration: 10000
       
-      
-resilience4j.bulkhead:
+ #Bulkhead either is not working or doesn't show in prometheus
+resilience4j.bulkhead:    
   instances:
     userService:
       maxWaitDuration: 10ms
