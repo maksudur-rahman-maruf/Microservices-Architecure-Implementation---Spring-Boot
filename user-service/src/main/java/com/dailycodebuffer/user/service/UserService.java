@@ -45,7 +45,7 @@ public class UserService {
 
     @CircuitBreaker(name="userService", fallbackMethod = "userFallBack")
     @RateLimiter(name="userService")
-//    @Retry(name="userService", fallbackMethod = "userFallBack")  // Retry Or (CircuitBreaker, RateLimiter)
+//    @Retry(name="userService", fallbackMethod = "userFallBack") 
     public ResponseEntity getUserWithDepartment(Long userId) {
         log.info("Inside getUserWithDepartment method of UserService");
         ResponseTemplateVO vo = new ResponseTemplateVO();
